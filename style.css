@@ -87,8 +87,6 @@ body{
 
 #googleMap{
     flex: 1 1 auto;
-    /* Nohai Bogdan - am adaugat transition*/
-    transition: 0.5s;
 }
 
 
@@ -204,110 +202,4 @@ div.tab button.active {
     flex-direction: row;
     justify-content: flex-end;
     overflow: hidden;
-}
-
-
-
-
-
-
-
-/* Nohai Bogdan*/
-
-
-
-#bottom-timeline {
-    width: 100%;
-    height: 0px;
-    background-color: blue;
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    transition: 0.5s;
-    z-index: 1;
-}
-
-
-  #username-list {
-    width: 300px;
-    height: 100%;
-    background-color: #e0ecff;
-    overflow-x: hidden;
-  }
-
-    .username-wrap {
-      padding-left: 20px;
-      font-size: 20px;
-    }
-
-
-  #pictures-list {
-    background-color: #BCDFEB;
-    /*overflow: hidden;*/
-    width: 60%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
-    
-
-  }
-
-    .picture-content {
-        background-color: white;
-        height: 100px;
-        width: 200px;
-        margin-top: 0px;
-        padding-top: 0px;
-        display: inline-block;
-        vertical-align:top;
-    }
-
-    .picture-time {
-        height: 20px;
-    }
-
-
-#open-close-button {
-    position: absolute;
-    background-color: rgba(255,255,255,0.5);
-    height: 50px;
-    width: 50px;
-    left: 80px;
-    bottom: 0px;
-    z-index: 5;
-    transition: 0.5s;
-}
-
-
- .tabcontent h2, h5, h3, h4, p, div {
-    font-family: 'Open Sans', sans-serif;
-    color: rgba(0, 0, 0, 0.87);
-}
-
- .tabcontent p, div {
-    font-size: 14px;
-}
-
- .tabcontent h3 {
-    font-size: 16px;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-color: #f9d654;
-
- }
-
-#size-container, #type-container, #color-container, #time-date-container {
-    display: none;
-}
-
-#open-close-icon{
-    font-size: 40px;
-    padding-left: 4px;
-    color: rgba(0,0,0,0.6);
-}
-
-#wrapper-list-picture{
-    white-space: nowrap;
-     overflow: auto;
 }
