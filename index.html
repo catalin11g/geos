@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Application Tittle</title>
+
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div id="mySidenav" class="sidenav">
+		<div class="tab">
+			<button class="tablinks" onclick="openCity(event, 'London')">
+				<i class="material-icons">style</i>
+			</button>
+			<button class="tablinks" onclick="openCity(event, 'Paris')">
+				<i class="material-icons">settings</i>
+			</button>
+			<button class="tablinks" onclick="openCity(event, 'Tokyo')">
+				<i class="material-icons">info</i>
+			</button>
+		</div>
+
+		<div id="London" class="tabcontent">
+			<h3>London</h3>
+			<p>London is the capital city of England.</p>
+		</div>
+
+		<div id="Paris" class="tabcontent">
+			<h3>Paris</h3>
+			<p>Paris is the capital of France.</p>
+		</div>
+
+		<div id="Tokyo" class="tabcontent">
+			<h3>Tokyo</h3>
+			<p>Tokyo is the capital of Japan.</p>
+		</div>
+	</div>
+
+	<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+	<div id="main">
+		<div id="top-bar">
+			<div id="top-bar-container">
+				<div id="left-top-bar">
+					<div class="container" onclick="toggleNav(this)">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+				</div>
+				<div id="right-top-bar">
+					<div id="right-top-bar-content">
+
+						<div id="wrap">
+							<div id="search">
+								<input type="text" class="searchTerm" placeholder="What are you looking for?">
+							</div>
+							<button type="submit" class="searchButton">
+									<i class="material-icons">search</i>
+								</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="googleMap"></div>
+	</div>
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWMpPiq4pplxRRxiguHKP0bebKBrzv4Cw&callback=initialize"></script>
+</body>
+
+</html>
