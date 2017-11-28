@@ -7,20 +7,18 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>GeoS</title>
 
-	
+	<script src="script.js"></script>
 	<link rel="stylesheet" href="style.css">
 
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
 <body>
 	<div id="mySidenav" class="sidenav">
 		<div class="tab">
-			<button class="tablinks" onclick="openCity(event, 'style-menu')">
+			<button class="tablinks" onclick="openCity(event, 'London')">
 				<i class="material-icons">style</i>
 			</button>
 			<button class="tablinks" onclick="openCity(event, 'Paris')">
@@ -31,81 +29,10 @@
 			</button>
 		</div>
 
-		<div id="style-menu" class="tabcontent">
-			<!-- <h3>London</h3>
-			<p>London is the capital city of England.</p> -->
-
-			<!-- Here  -->
-			<div>
-
-				<h3>Picture attributes</h3>
-				<div id="size-attr">
-                    <div id="btn-show-size">
-						<h4>Size</h4>
-					</div>
-					<div id="size-container">
-						<input type="radio" name="size" value="any-size" checked="checked"> Any size<br>
-					    <input type="radio" name="size" value="large"> Large<br>
-					    <input type="radio" name="size" value="medium"> Medium<br>
-					    <input type="radio" name="size" value="icon"> Icon<br>
-				    </div>
-				</div>
-				<div id="type-attr">
-					<div id="btn-show-type">
-					    <h4>Type</h4>
-					</div>
-					<div id="type-container">
-	                    <input type="radio" name="type" value="any-type" checked="checked">Any type<br>
-	                    <input type="radio" name="type" value="face">Face<br>
-	                    <input type="radio" name="type" value="photo">Photo<br>
-	                    <input type="radio" name="type" value="clip-art">Clip art<br>
-	                    <input type="radio" name="type" value="line-drawing">Line drawing<br>
-	                    <input type="radio" name="type" value="animated">Animated<br>
-                    </div>
-				</div>
-				<div id="color-attr">
-					<div id="btn-show-color">
-					    <h4>Color</h4>
-				    </div>
-				    <div id="color-container">
-	                    <input type="radio" name="color" value="any-color" checked="checked">Any color<br>
-	                    <input type="radio" name="color" value="full-color">Full color<br>
-	                    <input type="radio" name="color" value="black-white">Black and white<br>
-	                    <input type="radio" name="color" value="transparent">Transparent<br>
-               	    </div>
-				</div>
-
-			</div>
-            <div>
-			    <div id="btn-show-time">
-					<h3>Time and date</h3>
-				</div>
-				<div id="time-date-container">
-                    <input type="radio" name="time" value="any-time" checked="checked">Any time<br>
-                    <input type="radio" name="time" value="past-24">Past 24 hours<br>
-                    <input type="radio" name="time" value="past-week">Past a week<br>
-				</div>
-			</div>
-
-			<div>
-				<h3>Location</h3>
-				<p>Radius:</p>
-				<input id="location-radius" type="range" min="0" max="100" value="0" step="1" onchange="updateRangeLocation(this.value);">
-				<div id="nr-km">0 km </div>
-			</div>
-
-			<div>
-				<h3>Instagram/500px users</h3>
-                <input type="checkbox" name="users" >cristina_aguillera<br>
-                <input type="checkbox" name="users" >justin_timberlake<br>
-                <input type="checkbox" name="users" >tom_cruse<br>
-                <input type="checkbox" name="users" >jessica_lopez<br>
-
-			</div>
-
+		<div id="London" class="tabcontent">
+			<h3>London</h3>
+			<p>London is the capital city of England.</p>
 		</div>
-
-
 
 		<div id="Paris" class="tabcontent">
 			<h3>Paris</h3>
@@ -114,8 +41,8 @@
 
 		<div id="Tokyo" class="tabcontent">
 			<h3>Tokyo</h3>
-			<a href="ScholarlyReport.html">Application info</a>
- 		</div>
+			<p>Tokyo is the capital of Japan.</p>
+		</div>
 	</div>
 
 	<div id="main">
@@ -147,74 +74,7 @@
 			</div>
 		</div>
 		<div id="googleMap"></div>
-
-        
-        <!-- Add new elements Nohai Bogdan -->
-        <div id="open-close-button" >
-			<i id="open-close-icon" class="material-icons" >arrow_upward</i>
-		</div>
-
-        <div id="bottom-timeline" >
-        	
-        	<!-- here is a list of usernames -->
-            <div id="username-list">
-            	<div class="username-wrap"><p>cristina_aguillera</p></div>
-            	<div class="username-wrap"><p>justin_timberlake</p></div>
-            	<div class="username-wrap"><p>tom_cruse</p></div>
-            	<div class="username-wrap"><p>jessica_lopez</p></div>
-            	
-            </div>
-
-            <!-- for each username there is a list of pictures -->
-            <div id="pictures-list">
-            	<div id="wrapper-list-picture">
-	            	<div class="picture-content">
-	            		<div class="picture-wraper">
-	            			<img src="images/pic1.jpg" height="auto" width="200">
-	            		</div>
-	            		<div class="picture-time"><p>dwkafnkl</p></div>
-	            	</div>
-	            	<div class="picture-content">
-	            		<div class="picture-wraper">
-	            			<img src="images/pic2.jpg" height="auto" width="200">
-	            		</div>
-	            		<div class="picture-time"><p></p></div>
-	            	</div>
-	            	<div class="picture-content">
-	            		<div class="picture-wraper">
-	            			<img src="images/pic3.jpg" height="100%" width="100%">
-	            		</div>
-	            		<div class="picture-time"><p></p></div>
-	            	</div>
-	            	<div class="picture-content">
-	            		<div class="picture-wraper">
-	            			<img src="images/pic4.jpg" height="100%" width="100%">
-	            		</div>
-	            		<div class="picture-time"><p></p></div>
-	            	</div>
-	            	<div class="picture-content">
-	            		<div class="picture-wraper">
-	            			<img src="images/pic5.jpg" height="100%" width="100%">
-	            		</div>
-	            		<div class="picture-time"><p></p></div>
-	            	</div>
-	            	<div class="picture-content">
-	            		<div class="picture-wraper">
-	            			<img src="images/pic6.jpg" height="100%" width="100%">
-	            		</div>
-	            		<div class="picture-time"><p></p></div>
-	            	</div>
-	            </div>
-            </div>
-        </div>
-
 	</div>
-
-
-
-    <!-- add js script at the end of the file to be possible to manipulate DOM -->
-    <script src="script.js"></script>
-
 
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWMpPiq4pplxRRxiguHKP0bebKBrzv4Cw&callback=initialize"></script>
 </body>
