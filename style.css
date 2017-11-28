@@ -192,6 +192,8 @@ div.tab button.active {
 
   #left-top-bar {
     width: 60px;
+    display:flex;
+    flex-direction:row;
   }
 
 #right-top-bar-content {
